@@ -23,11 +23,11 @@ function getWeatherByCity() {
             const lat = data.coord.lat;
             const lon = data.coord.lon;
 
-            document.getElementById("nomecidade").innerText = `${data.name}, ${data.sys.country}`; // Atualize com o ID correto
+            document.getElementById("nomecidade").innerText = `${data.name}, ${data.sys.country}`; 
             document.getElementById("temperatura").innerText = `${data.main.temp} °C`;
             document.getElementById("clima").innerText = data.weather[0].description;
             document.getElementById("umidade").innerText = `${data.main.humidity}%`;
-            document.getElementById("vento").innerText = `${(data.wind.speed * 3.6).toFixed(2)} km/h`; // Convertendo m/s para km/h
+            document.getElementById("vento").innerText = `${(data.wind.speed * 3.6).toFixed(2)} km/h`; 
             document.getElementById("latitude").innerText = lat;
             document.getElementById("longitude").innerText = lon;
 
